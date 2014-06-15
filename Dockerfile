@@ -7,6 +7,9 @@ RUN apt-get update
 # install git
 RUN apt-get install -y git
 
-# set a rly dumb default root password
-RUN echo "root:passwerd" | chpasswd
+# install python and pip
+RUN apt-get install -y python python-dev pip
+
+# install virtualenv
+RUN pip install virtualenv
 
