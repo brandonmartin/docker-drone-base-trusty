@@ -8,7 +8,7 @@ RUN apt-get update
 RUN apt-get install -y git
 
 # install python and pip
-RUN apt-get install -y python python-dev pip
+RUN apt-get install -y python python-dev python-pip
 
 # install virtualenv
 RUN pip install virtualenv
